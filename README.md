@@ -2,6 +2,7 @@
 # Sample Spring Boot REST Service - Word Count
 ## Description
 author: William Keung
+
 User can upload a text file to the service where a word count is perform and kept track of. The user can then execute REST queries to gather information on what the service has collected.
 
 This coding exercise has three services defined:
