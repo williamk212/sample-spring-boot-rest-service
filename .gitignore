@@ -1,0 +1,10 @@
+# mac files
+.DS_Store
+# eclipse project files
+.classpath
+.project
+.settings/
+# java files
+target/
+*.class
+

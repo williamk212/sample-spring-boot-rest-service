@@ -1,0 +1,21 @@
+Build a REST web service using one of the languages we prefer: Go, Scala, or Java. 
+This RESTful service should Expose an endpoint to upload an arbitrary ASCII text file of size <= 10MB.
+
+
+Parse the file (assume any uploaded file is well formatted and contains only ASCII characters) for the following information:
+- The total word count
+- The counts of each occurrence of a word
+- Return the parsed information in the HTTP response body as JSON.
+
+and satisfy one or more of the following:
+
+
+Expose another end point that can query the system for details on every file that has been uploaded.
+
+Remove any words from the response that contain "blue" within then, i.e. "blue," "blueberry," "bluegrass," etc.
+
+Implement the solution without blocking I/O.
+
+Evaluation will be based on application design, test coverage and readability of the code. 
+Test coverage should demonstrate both success and failure conditions within reason. 
+Included with the code should be some form of README on how to run the service and any dependencies not included (depends.txt, SBT, Maven, etc.)

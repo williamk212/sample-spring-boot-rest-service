@@ -1,0 +1,2 @@
+Build a REST web service using one of the languages we prefer: Go, Scala, or Java. 
+This RESTful service should Expose an endpoint to upload an arbitrary ASCII text file of size <= 10MB.

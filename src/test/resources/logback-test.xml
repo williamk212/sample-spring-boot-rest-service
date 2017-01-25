@@ -1,0 +1,25 @@
+<!--                        -->
+<!-- Logger configuration   -->
+<!--                        -->
+<configuration>
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%-4r [%t] %-5p %logger{15} - %m%n</pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+  </appender>
+  <appender name="WORDCOUNT_TEST_DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>target/logs/spring-boot-rest-wordcount.log</file>
+    <encoder>
+      <pattern>%date{"yyyy-MM-dd HH:mm:ss,SSS"} %-5level %logger{20}| %m%n</pattern>
+      <charset>UTF-8</charset>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>target/logs/spring-boot-rest-wordcount.log.%d{yyyy-MM-dd}</fileNamePattern>
+    </rollingPolicy>
+  </appender>
+  <root level="DEBUG">
+    <appender-ref ref="CONSOLE"/>
+    <appender-ref ref="WORDCOUNT_TEST_DEBUG"/>
+  </root>
+</configuration>
